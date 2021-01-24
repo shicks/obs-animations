@@ -1,6 +1,6 @@
 // Makes animations.
 
-import {CanvasRecorder} from './CanvasRecorder.js';
+//import {CanvasRecorder} from './CanvasRecorder.js';
 
 class SpriteMap {
   constructor(img, w, h, c, r, x0, y0) {

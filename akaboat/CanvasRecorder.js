@@ -1,4 +1,5 @@
 // CanvasRecorder.js - smusamashah
+// https://github.com/SMUsamaShah/CanvasRecorder
 // To record canvas effitiently using MediaRecorder
 // https://webrtc.github.io/samples/src/content/capture/canvas-record/
 
