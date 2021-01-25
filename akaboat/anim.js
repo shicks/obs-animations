@@ -55,7 +55,7 @@ class FrameSprite extends Sprite {
 
 class AkahanaBoat extends FrameSprite {
   constructor(img) {
-    super(new SpriteMap(img, 32, 22, 1, 2, 750, 0));
+    super(new SpriteMap(img, 32, 22, 4, 2, 750, 0));
   }
 }
 
@@ -124,6 +124,7 @@ async function run() {
     await draw();
     for (let i = 0; i < 835; i++) {
       boat.move(-1, 0);
+      if (Math.random() < 0.015) boat.c = Math.floor(Math.random() * 4);
       await draw();
     }
     dolphin.moveTo(80, -32);
@@ -135,7 +136,7 @@ async function run() {
     }
     // Note: use 380 to save webm
     for (let i = -10; i < 400; i++) {
-      dolphin.move(1.75, i < 0 ? i / 10 : 0);
+      dolphin.move(1.75, i < 0 ? i / 10 : -Math.cos(i / 40) / 3);
       await draw();
     }
     boat.moveTo(755, 70);
