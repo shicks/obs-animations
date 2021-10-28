@@ -1,4 +1,4 @@
 # obs-animations
 Animations for OBS
 
-* [akaboat](akaboat/)
+* [akaboat](https://shicks.github.io/obs-animations/akaboat/)
